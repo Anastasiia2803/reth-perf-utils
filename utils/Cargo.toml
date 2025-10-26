@@ -15,3 +15,9 @@ ctor = "0.2.5"
 # trait on stable Rust. Enabling this feature means that `alloc` will
 # implement its `Allocator` trait.
 allocator-api2 = { version = "0.2.8", default-features = false, features = ["alloc"]}
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "hotpaths"
+harness = false
